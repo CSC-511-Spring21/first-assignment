@@ -1,7 +1,6 @@
 # assignment-1
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a web app that prints out the current date and time, including milliseconds, of my current location, New York, and another location - Lagos, Nigeria. There is a select input at the top left corner of the screen, where users can choose to see the date and time in either New York or Lagos. The date and time of each location updates every second.
 
 ## Prerequisites
 

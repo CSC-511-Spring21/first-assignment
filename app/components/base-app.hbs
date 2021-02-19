@@ -1,0 +1,13 @@
+{{yield}}
+
+<div class="container">
+    <select class="select" onchange={{this.citySelected}}>
+        <option value="New York, USA">Current Location</option>
+        <option value="Lagos, Nigeria">Lagos, Nigeria</option>
+    </select>
+    {{!-- <button onclick={{this.refresh}}>Refresh</button> --}}
+    <div class="info">
+        <h3>{{this.city}}</h3>
+        <h1>{{this.dateAndTime}}</h1>
+    </div>
+</div>
