@@ -14,8 +14,8 @@ export default class SimpleDateTimeComponent extends Component {
   /* localDateTime = new Date();
    */
   hoursDefference = 7;
-  localDateTime = Date.now() + ' sassas';
-  remoteDateTime = Date.now() - this.hoursDefference + ' sassas'
+  localDateTime = Date.now() + ' hey';
+  remoteDateTime = Date.now() - this.hoursDefference + 'sassas'
   localCity = 'New York City, New York USA';
   remoteCity = 'Bucharest, Romania';
 
