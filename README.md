@@ -1,7 +1,23 @@
 # date-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This assignment required creating an Ember project that display the current local date/time, and the date/time in a city in another timezone. It has a button to refresh the times.
+
+I created a project using @glimmer/tracking and @ember/object to dymanically update the date/time displays.
+
+Since the project was based on date and time, I used the Momentjs javascript library (https://momentjs.com/), to simplify formatting and calcuating time difference. I installed it using:
+
+npm install moment --save
+
+I imported it by adding to ember-cli-build.js:
+
+app.import('node_modules/moment/moment.js');
+
+And to prevent ESLint errors, I added to .eslintrc.js:
+
+globals: {
+    moment: true,
+  }
+
 
 ## Prerequisites
 
