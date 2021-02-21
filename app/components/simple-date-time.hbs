@@ -1,15 +1,17 @@
 <div class="flex-container">
-    <div class="flex-item" >
+    <div class="flex-item item-left">
         <h2>{{this.localCity}}</h2>
-        <p>{{this.localDateTime}}</p>
+        <p class="date-time">{{this.localDateTime}}</p>
     </div>
-    <div class="flex-item">
+    <div class="flex-item item-right">
         <h2>{{this.remoteCity}}</h2>
-        <p>{{this.remoteDateTime}}</p>
+        <p class="date-time">{{this.remoteDateTime}}</p>
     </div>
 </div>
-<div class="refresh-time"><p><button type="button" onclick={{this.updateTime}}>
- <i class="fas fa-sync"></i>
-</button></p></div>
+<div class="refresh-time">
+    <p>
+        <button type="button" {{on "click" this.updateTime}}><i class="fas fa-sync"></i></button>
+    </p>
+</div>
 
 {{yield}}
