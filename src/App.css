@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background-image: url('https://wallpaperaccess.com/full/333895.jpg');
+}
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#app {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
