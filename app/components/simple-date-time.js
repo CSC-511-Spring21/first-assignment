@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 import Component from '@glimmer/component';
+
 import {
   tracked
 } from '@glimmer/tracking';
@@ -8,20 +9,23 @@ import {
 } from '@ember/object';
 
 export default class SimpleDateTimeComponent extends Component {
-  @tracked localDateTime;
-  @tracked remoteDateTime;
+    
+ 
+  hoursDifference = 7;
+  @tracked localDateTime = moment(Date.now()).format("ddd MMM Do, YYYY h:mm:ss:SS a");
+  @tracked remoteDateTime = moment(Date.now()).add(this.hoursDifference, 'h').format("ddd MMM Do, YYYY h:mm:ss:SS a");
 
   /* localDateTime = new Date();
    */
-  hoursDefference = 7;
-  localDateTime = Date.now() + ' hey';
-  remoteDateTime = Date.now() - this.hoursDefference + 'sassas'
-  localCity = 'New York City, New York USA';
+  
+  /* localDateTime; */
+  localCity = 'New York City, USA';
   remoteCity = 'Bucharest, Romania';
 
   @action
-  updateTime(eventObject) {
-    this.localDateTime = "ttttttt";
-    console.log('clicked');
+  updateTime() {
+    this.localDateTime = moment(Date.now()).format("ddd MMM Do, YYYY h:mm:ss:SS a");
+    this.remoteDateTime = moment(Date.now()).add(this.hoursDifference, 'h').format("ddd MMM Do, YYYY h:mm:ss:SS a");
+    console.log(this.localDateTime);
   }
 }
