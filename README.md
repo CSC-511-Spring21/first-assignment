@@ -2,6 +2,7 @@
 
 # Description
 
+<img src="public/screenshot.png"/>
 This app will show the date and time in New York and Paris.
 
 ## Prerequisites
