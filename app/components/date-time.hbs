@@ -1,0 +1,30 @@
+{{yield}}
+
+< <div class="container">
+    <h1>Date Time</h1>
+    <h3>Current Interval: {{this.interval}}</h3>
+
+    <div class="interval">
+        <span>Change Interval:</span>
+        <input value={{this.interval}} oninput={{action 'updateInterval' value="target.value" }} />
+
+    </div>
+    <div>
+        <label class="place">New York: </label>
+        <span class="date-time">
+            {{this.nyDate}}
+            {{this.nyTime}}
+        </span>
+    </div>
+    <div>
+        <label class="place">Japan: </label>
+        <span class="date-time">
+            {{this.japanDate}}
+            {{this.japanTime}}
+        </span>
+
+    </div>
+
+    <button class="button" onclick={{this.getDateAndTime}}>Refresh</button>
+
+    </div>

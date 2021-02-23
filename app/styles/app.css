@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.container > h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.container > div {
+  margin-bottom: 15px;
+}
+
+.interval {
+  font-size: 18px;
+}
+
+.interval > input {
+  padding: 5px;
+  font-size: 12px;
+}
+
+.place {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.date-time {
+  font-size: 20px;
+}
+
+.button {
+  background-color: blue;
+  color: white;
+  padding: 15px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: navy;
+}
