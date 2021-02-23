@@ -1,5 +1,26 @@
-body {
+.container{
     display: flex;
     align-items: center;
+    width: 100vw;
     flex-direction: column;
+
+}
+
+.timeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.times {
+    margin: 20px;
+}
+
+button {
+    display: flex;
+    width: 60px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
 }
