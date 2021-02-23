@@ -1,0 +1,8 @@
+{{yield}}
+<div class="date-container">
+  <SimpleDateDisplay @time={{displayTime this.date 0}}>Local</SimpleDateDisplay>
+  <SimpleDateDisplay @time={{displayTime this.date -3}}>San Francisco</SimpleDateDisplay>
+  <SimpleDateDisplay @time={{displayTime this.date 5}}>London</SimpleDateDisplay>
+  <SimpleDateDisplay @time={{displayTime this.date 14}}>Tokyo</SimpleDateDisplay>
+  <SimpleDateDisplay @time={{displayTime this.date 10.5}}>Mumbai</SimpleDateDisplay>
+</div>

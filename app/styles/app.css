@@ -1,0 +1,15 @@
+.date-display {
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+html {
+  background-color: #282c34;
+  min-height: 100vh;
+  color: #D6E0EB;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
