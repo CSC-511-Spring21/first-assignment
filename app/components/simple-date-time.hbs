@@ -1,0 +1,17 @@
+{{yield}}
+<div class="container">
+    <div class="timeContainer">
+        <div class="times">
+            <h1>Local Time</h1>
+            <h1>{{this.date}}</h1>
+            <h1>{{this.time}}, {{this.milli}} milliseconds</h1>
+        </div>
+        <div class="times">
+            <h1>Time in LA</h1>
+            <h1>{{this.oDate}}</h1>
+            <h1>{{this.oTime}}, {{this.milli}} milliseconds</h1>
+        </div>
+    </div>
+
+    <button type="button" {{on "click" this.getDateAndTime}}>Refresh</button>
+</div>
