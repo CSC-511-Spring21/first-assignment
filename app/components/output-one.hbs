@@ -1,0 +1,12 @@
+{{yield}}
+
+ <div class = "info-boxes"><h4>Using built-in Javascript features such as Date()</h4>
+        <h6>Local Date and Time: </h6>
+            {{this.currentDateTime}}<br>
+            <br>
+        <h6>Other Location: </h6>
+            {{@otherLoc}}<br>
+            {{this.otherDateTime}}<br>
+            <br>
+    <button {{on "click" (action "updateFirstValues")}}>Reload?</button>
+</div>

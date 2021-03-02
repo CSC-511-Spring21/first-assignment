@@ -1,0 +1,12 @@
+{{yield}}
+
+<div class = "info-boxes"><h4>Using Date() and Date.UTC()</h4>
+        <h6>Local Date and Time: </h6>
+            {{this.nycDate}}<br>
+            <br>
+        <h6>Other Location: </h6>
+            {{@otherLoc}}<br>
+            {{this.anotherDate}}<br>
+            <br>
+        <button {{on "click" (action "updateSecondValues")}}>Reload?</button>
+    </div>

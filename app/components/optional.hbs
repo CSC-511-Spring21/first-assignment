@@ -1,0 +1,28 @@
+{{ yield }}
+
+<div class = "optional-box">
+
+    <h4>Using dependencies/add-ons such as ember-moment</h4>
+
+    <h6>Local Date and Time: {{this.currentDateTime}}</h6>
+
+    <br><br><h6>Location: {{@location}}</h6>
+    <p>Date and Time: {{this.dateTime}}</p>
+
+    <div>
+        <h6>Choose a location</h6>
+        <div>
+            <button {{on "click" (action "updateBeijing")}}>Beijing</button>
+            <button {{on "click" (action "updateBerlin")}}>Berlin</button>
+            <button {{on "click" (action "updateJerusalem")}}>Jerusalem</button>
+            <button {{on "click" (action "updateLondon")}}>London</button>
+            <button {{on "click" (action "updateMoscow")}}>Moscow</button>
+            <button {{on "click" (action "updateNy")}}>New York</button>
+            <button {{on "click" (action "updatePyang")}}>Pyeongyang</button>
+        </div>
+    </div>
+
+    <br><br>
+   <button {{on "click" (action "updateDateTime")}}>Reload?</button>
+
+</div>
