@@ -1,7 +1,6 @@
 # first-homework
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This app show the current dat and time of New York and Enugu Nigeria, (I wasn't able to have it update automactically for some reason it wouldn't even I tried different code so I just went back to adding the refresh counter)
 
 ## Prerequisites
 
